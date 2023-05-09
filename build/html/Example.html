@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Examples &mdash; GaussianNaiveBayesWithSlidingWindow 0.1 documentation</title>
+  <title>Examples &mdash; GNBwSWin 0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -29,7 +29,7 @@
           
           
           <a href="index.html" class="icon icon-home">
-            GaussianNaiveBayesWithSlidingWindow
+            GNBwSWin
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -57,7 +57,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">GaussianNaiveBayesWithSlidingWindow</a>
+          <a href="index.html">GNBwSWin</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -198,7 +198,7 @@ there is the learing phase, predicting phase and calculating metrics phase.</p>
 <h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this heading"></a></h2>
 <p>The purpose of this example is to show the sliding window that enhances the Gaussian Naive Bayes classifier
 with the mechanism that allows the model to adapt to changes in data distribution over time. In the example we have
-100 datapoints of 3 features in the training set. Then there is anothr 100 points data stream generated but
+100 datapoints of 3 features in the training set. Then there is another 100 points data stream generated but
 the feature 1 of each generated datapoint is gradually increased by a small ammount. This leads to the mean of the
 feature 1 to be gradually increased over time. The model learns from the data stream one data point at a time.
 At the same time the model predict the value of another data point generated the same way.</p>
