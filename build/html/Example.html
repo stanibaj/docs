@@ -136,7 +136,12 @@ than 2, then this data point is labelled as 1, otherwise it is labelled as 0. Af
 there is the learing phase, predicting phase and calculating metrics phase.</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">Example of GaussianNaiveBayesWithSlidingWindow model predicting labels on data with one feature with zero variance.</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate a dataset with a 3 features.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">GNBwSWClassifier</span> <span class="kn">import</span> <span class="n">GaussianNaiveBayesWithSlidingWindow</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># Generate a dataset with a 3 features.</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
 <span class="c1"># Set the value of feature 0 to be constant to simulate zero variance.</span>

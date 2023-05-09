@@ -63,6 +63,11 @@ there is the learing phase, predicting phase and calculating metrics phase.
 .. code-block::
     :caption: Example of GaussianNaiveBayesWithSlidingWindow model predicting labels on data with one feature with zero variance.
 
+    from GNBwSWClassifier import GaussianNaiveBayesWithSlidingWindow
+    import numpy as np
+    from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+    from sklearn.model_selection import train_test_split
+
     # Generate a dataset with a 3 features.
     X = np.random.rand(100, 3)
 
