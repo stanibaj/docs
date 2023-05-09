@@ -124,7 +124,7 @@ Example 3
 
 The purpose of this example is to show the sliding window that enhances the Gaussian Naive Bayes classifier
 with the mechanism that allows the model to adapt to changes in data distribution over time. In the example we have
-100 datapoints of 3 features in the training set. Then there is anothr 100 points data stream generated but
+100 datapoints of 3 features in the training set. Then there is another 100 points data stream generated but
 the feature 1 of each generated datapoint is gradually increased by a small ammount. This leads to the mean of the
 feature 1 to be gradually increased over time. The model learns from the data stream one data point at a time. 
 At the same time the model predict the value of another data point generated the same way.  
